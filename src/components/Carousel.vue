@@ -6,10 +6,10 @@ export default {
     data (){
         return {
             slides: [
-                {img: '@/assets/networking.png', text:""}, //idea contest
-                {img: '@/assets/frog.png', text:""}, //Mathletics 
-                {img: '@/assets/plain.png', text:""}, //Programming Contest
-                {img: '', text:""}, //Easter Egg
+                {idx:'1', img: require('@/assets/networking.png'), text:""}, //idea contest
+                {idx:'2', img: require('@/assets/frog.png'), text:""}, //Mathletics 
+                {idx:'3', img: require('@/assets/plain.png'), text:""}, //Programming Contest
+                {idx:'4', img: require('@/assets/dewal.jpeg'), text:""}, //Easter Egg
             ]
         }
     }
@@ -17,19 +17,15 @@ export default {
 </script>
 
 <template>
-  <v-carousel
-    cycle
-    height="500"
-    class="p-10"
-    hide-delimiter-background
-    show-arrows-on-hover>
-    <v-carousel-item v-for="slide in slides" :key="slide.img">
-        <v-sheet>
-            <!-- <v-img src="@/assets/networking.png"></v-img> -->
-            <v-img :src="slide.img"> </v-img>
-        </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+    <v-carousel>
+      <v-carousel-item
+        v-for="(item,i) in slides"
+        :key="i"
+        :src="item.img"
+      >
+        <span class="sm">Idea Sprint</span>
+      </v-carousel-item>
+    </v-carousel>
 </template>
 
 
