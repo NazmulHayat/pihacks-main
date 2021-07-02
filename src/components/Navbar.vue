@@ -1,9 +1,10 @@
 <template>
     <nav>
-        <v-toolbar app dark class="black white--text" height="75" id="toolbar-bg" elevation="100">
+        <v-app-bar app dark class="black white--text" height="75" id="toolbar-bg" elevation="100">
         <v-img
             src="@/assets/pihacks_logo.png"
             max-width='50'
+            contain
         ></v-img>
         <span id='main_text' class="white--text font-weight-bold">PIHACKS</span>
         <v-spacer></v-spacer>
@@ -14,7 +15,7 @@
                 </v-btn>
             </v-list-tile-action>
         </v-list-tile>
-        </v-toolbar>
+        </v-app-bar>
     </nav>
 </template>
 
