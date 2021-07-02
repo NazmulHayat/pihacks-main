@@ -13,6 +13,7 @@
             Tired of confiding your ideas in your grim pc screens? Presidency International School is proud to unveil “PiHacks 2021”, the first-ever high school hack fest in the nation. Technology, combining logical analysis, science and creativity in one facile format, has become a powerful medium for real change. Since its birth, Bangladesh has accomplished numerous technological feats, and at the cornerstone of all technological advancements inhabits “Digital Bangladesh”. We believe it is of utmost importance that we utilize our increasing dependence on technology so that we can work towards improving the lives of people. We aim to bring you an amalgamation of fun, learning and competitiveness where you will be able to engage in intellectual warfare and stimulate your passion with your fellow tech enthusiasts. </p>
         </div>
     </div>  
+    <TypeWriter/>
   </div>
 </template>
 
@@ -20,11 +21,12 @@
 
 import Carousel from '@/components/Carousel.vue';
 import Timer from '@/components/Timer.vue';
+import TypeWriter from '@/components/TypeWriter.vue';
 
 console.log(Timer);
 
 export default {
-  components: {Carousel, Timer},
+  components: {Carousel, Timer, TypeWriter},
   data: () => ({
     
   }),
