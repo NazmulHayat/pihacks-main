@@ -18,21 +18,24 @@ function WaitUntilFlipDownExists()
     });
     
 }
-
-async function dhet()
-{
-    await WaitUntilFlipDownExists();
-    var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
-    var fku = new flipdown(twoDaysFromNow, document.getElementById("flipdown"), {
-        theme: 'dark',
-        headings: ["Days", "Hours", "Minutes", "Seconds"]
-    });
-fku.start();
-}dhet();
-
 export default {
-    data () {
+    data: ()=>{
         return {}
+    },
+    methods:{
+         dhet: async()=>
+        {
+            await WaitUntilFlipDownExists();
+            var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
+            var fku = new flipdown(twoDaysFromNow, document.getElementById("flipdown"), {
+                theme: 'dark',
+                headings: ["Days", "Hours", "Minutes", "Seconds"]
+            });
+            fku.start();
+        }
+    },
+    beforeMount(){
+        this.dhet();
     }
 }
 
