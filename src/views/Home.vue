@@ -3,15 +3,12 @@
     <Carousel/>
     <FAQs/>
     <Timer/>
-    <div class="main-text">
-        <div class="main-head">About PIHACKS</div>
-        <div class="white--text 
-            text-lg-h4
-            pl-16 pr-16
-        ">
-            <p class="p1">
-            Tired of confiding your ideas in your grim pc screens? Presidency International School is proud to unveil “PiHacks 2021”, the first-ever high school hack fest in the nation. Technology, combining logical analysis, science and creativity in one facile format, has become a powerful medium for real change. Since its birth, Bangladesh has accomplished numerous technological feats, and at the cornerstone of all technological advancements inhabits “Digital Bangladesh”. We believe it is of utmost importance that we utilize our increasing dependence on technology so that we can work towards improving the lives of people. We aim to bring you an amalgamation of fun, learning and competitiveness where you will be able to engage in intellectual warfare and stimulate your passion with your fellow tech enthusiasts. </p>
-        </div>
+    <div class="main-text pa-16">
+            <div class="main-head text-h4">About PIHACKS</div>
+            <div class="white--text text-h6">
+                <p class="p1">
+                Tired of confiding your ideas in your grim pc screens? Presidency International School is proud to unveil “PiHacks 2021”, the first-ever high school hack fest in the nation. Technology, combining logical analysis, science and creativity in one facile format, has become a powerful medium for real change. Since its birth, Bangladesh has accomplished numerous technological feats, and at the cornerstone of all technological advancements inhabits “Digital Bangladesh”. We believe it is of utmost importance that we utilize our increasing dependence on technology so that we can work towards improving the lives of people. We aim to bring you an amalgamation of fun, learning and competitiveness where you will be able to engage in intellectual warfare and stimulate your passion with your fellow tech enthusiasts. </p>
+            </div>
     </div>  
   </div>
 </template>
@@ -43,6 +40,8 @@ export default {
         /* padding-top: 50px; */
         /* font-family: 'Bree Serif', serif; */
         font-family: 'Open Sans', sans-serif;
+        
+        
         /* width: 800px; */
         /* font-size: 2.2em; */
     }

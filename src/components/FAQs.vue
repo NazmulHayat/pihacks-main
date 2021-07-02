@@ -78,7 +78,7 @@ export default {
                 <v-row>
                     <v-col v-for="(img,i) in qa.imgs" :key="i">
                         <a v-bind:href="qa.links[i]">
-                            <v-img :src="img" contain max-height="64px"></v-img>
+                            <v-img :src="img" contain ></v-img>
                         </a>
                     </v-col>
                 </v-row>
