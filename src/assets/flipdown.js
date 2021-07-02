@@ -7,7 +7,7 @@
  * @param {object} opt - Optional configuration settings
  **/
  class FlipDown {
-  constructor(uts, el = "flipdown", opt = {}) {
+  constructor(uts, el, opt = {}) {
     // If uts is not specified
     if (typeof uts !== "number") {
       throw new Error(
@@ -34,9 +34,8 @@
     this.hasEndedCallback = null;
 
     // FlipDown DOM element
+    this.element = el;
     console.log(el);
-    this.element = document.getElementById('flipdown');
-
     // Rotor DOM elements
     this.rotors = [];
     this.rotorLeafFront = [];
@@ -409,5 +408,4 @@ function appendChildren(parent, children) {
   });
 }
 
-
-export {FlipDown};
+module.exports=FlipDown;

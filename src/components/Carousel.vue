@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <v-carousel>
+    <v-carousel :show-arrows="false">
       <v-carousel-item
         v-for="(item,i) in slides"
         :key="i"

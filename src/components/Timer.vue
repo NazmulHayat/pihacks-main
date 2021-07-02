@@ -4,20 +4,32 @@
 
 <script>
 
-import flipdown from '../assets/flipdown.js';
+const flipdown = require("../assets/flipdown");
 
-document.addEventListener('DOMContentLoaded', () => {
-var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
+function WaitUntilFlipDownExists()
+{
+    return new Promise((resolve, reject)=>{
+        setInterval(()=>{
+            if(document.getElementById("flipdown") != null)
+                resolve();
+        },10);
+        let a=0;
+        if(a) reject(); //vue is shit
+    });
+    
+}
 
-        console.log("asdfasdfasdf", document.getElementById('flipdown'));
-
-var fku = new flipdown(twoDaysFromNow, document.getElementById("flipdown"), {
-    theme: 'dark',
-    headings: ["Days", "Hours", "Minutes", "Seconds"]
-});
+async function dhet()
+{
+    await WaitUntilFlipDownExists();
+    var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
+    var fku = new flipdown(twoDaysFromNow, document.getElementById("flipdown"), {
+        theme: 'dark',
+        headings: ["Days", "Hours", "Minutes", "Seconds"]
+    });
 fku.start();
-    console.log("adf");
-})
+}dhet();
+
 export default {
     data () {
         return {}
