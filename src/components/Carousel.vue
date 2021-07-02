@@ -20,6 +20,10 @@ export default {
 </script>
 
 <template>
+  <v-card
+    elevation="24"
+    class="mx-auto"
+  > 
     <v-carousel :show-arrows="false">
       <v-carousel-item
         v-for="(item,i) in slides"
@@ -32,6 +36,7 @@ export default {
       </div>
       </v-carousel-item>
     </v-carousel>
+  </v-card>
 </template>
 
 <style>
@@ -41,11 +46,15 @@ export default {
   }
   #header{
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.6em;
-    padding-left: 20px;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    /* margin: auto; */
+    /* padding-left: 41.5vw; */
   }
   #content{
-    font-size: 0.25em;
+    font-size: 0.5em;
     padding-right: 20px;
     padding-left: 20px; 
     white-space: pre;

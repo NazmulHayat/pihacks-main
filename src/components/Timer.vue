@@ -40,4 +40,10 @@ export default {
 
 <style>
     @import '../assets/flipdown.css';
+    .flipdown{
+        padding-top: 20px;
+        font-size: 1.5em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: auto;
+    }
 </style>
