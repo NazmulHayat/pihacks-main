@@ -8,10 +8,10 @@
 <script>
 
 import Carousel from '@/components/Carousel.vue';
-import FAQs from '@/components/FAQs.vue';
+
 
 export default {
-  components: {Carousel, FAQs},
+  components: {Carousel},
   data: () => ({
     
   }),

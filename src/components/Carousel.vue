@@ -24,7 +24,7 @@ export default {
         :key="i"
         :src="item.img"
       >
-      <span id="header" class="white--text mb-4">{{item.header}}</span>
+      <span id="header" class="white--text m">{{item.header}}</span>
       </v-carousel-item>
     </v-carousel>
 </template>
@@ -33,6 +33,8 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
   #header{
     font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.75em;
+    padding: 15px;
   }
 </style>
 

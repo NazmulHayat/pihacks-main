@@ -1,11 +1,15 @@
 <template>
-    <h1> FAQS </h1>
+    <FAQs/>
 </template>
 
 <script>
 
+import FAQs from '@/components/FAQs.vue';
+
 export default {
-
-}
-
+  components: {FAQs},
+  data: () => ({
+    
+  }),
+};
 </script>
