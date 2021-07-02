@@ -34,7 +34,7 @@ export default {
   #header{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 0.75em;
-    padding: 15px;
+    padding-left: 15px;
   }
 </style>
 

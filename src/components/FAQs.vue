@@ -39,6 +39,13 @@ export default {
                         require("@/assets/Discord.png"),
                         require("@/assets/Quizizz.png"),
                         require("@/assets/Toph.png")
+                    ],
+                    links:[
+                        "https://devpost.com",
+                        "https://zoom.us",
+                        "https://discord.com",
+                        "https://quizizz.com",
+                        "https://toph.co"
                     ]
                 },
                 {
@@ -67,10 +74,12 @@ export default {
             </v-expansion-panel-header>
             <v-expansion-panel-content>
             <div class="text-subtitle-2">Ans: {{qa.a}}</div>
-            <v-container>
+            <v-container v-if="qa.imgs!=null">
                 <v-row>
                     <v-col v-for="(img,i) in qa.imgs" :key="i">
-                        <v-img :src="img" contain max-height="80px"></v-img>
+                        <a v-bind:href="qa.links[i]">
+                            <v-img :src="img" contain height="64px"></v-img>
+                        </a>
                     </v-col>
                 </v-row>
             </v-container>
