@@ -9,7 +9,7 @@
         <v-spacer></v-spacer>
         <v-list-tile v-for="link in links" :key="link.text" class="p-0 text-none">
             <v-list-tile-action>
-                <v-btn text color="white"  flat x-large id="BTN" class="font-weight-bold text-none">
+                <v-btn router :to="link.route" text color="white"  flat x-large id="BTN" class="font-weight-bold text-none">
                     {{link.text}} 
                 </v-btn>
             </v-list-tile-action>

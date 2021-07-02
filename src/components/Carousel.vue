@@ -10,19 +10,26 @@ export default {
                 {idx:'2', img: require('@/assets/frog.png'), text:""}, //Mathletics 
                 {idx:'3', img: require('@/assets/plain.png'), text:""}, //Programming Contest
                 {idx:'4', img: require('@/assets/dewal.jpeg'), text:""}, //Easter Egg
-            ]
+            ],
         }
     }
+
 }
 </script>
 
 <template>
-    <v-carousel>
+    <v-carousel class="m-4">
       <v-carousel-item
         v-for="(item,i) in slides"
         :key="i"
         :src="item.img"
       >
+         <v-icon
+          large
+          color="purple darken-2"
+        >
+          mdi-dialpad
+        </v-icon>
         <span class="sm">Idea Sprint</span>
       </v-carousel-item>
     </v-carousel>
