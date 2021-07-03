@@ -28,6 +28,8 @@ export default {
     
   }),
   mounted(){
+    document.getElementById("particles-js").style.height=window.screen.height + "px";
+    document.getElementById("particles-js").style.width=window.screen.width + "px";
     window.particlesJS('particles-js', config);
   }
 }
