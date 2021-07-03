@@ -6,12 +6,12 @@ export default {
     data (){
         return {
             slides: [
-                {idx:'1', img: require('@/assets/lalal19.jpg'), header: "Idea Sprint",
+                {idx:'1', img: require('@/assets/math.jpg'), header: "Idea Sprint",
                   text: ""
                 }, //idea contest
-                {idx:'2', img: require('@/assets/lalal11.jpg'), header: "Mathletics", text:""}, //Mathletics 
-                {idx:'3', img: require('@/assets/lalal21.webp'), header: "CodeJam", text:""}, //Programming Contest
-                {idx:'4', img: require('@/assets/lalal30.jpg'), header: "Easter Egg", text:""}, //Easter Egg
+                {idx:'2', img: require('@/assets/ic.jpg'), header: "Mathletics", text:""}, //Mathletics 
+                {idx:'3', img: require('@/assets/pg.jpg'), header: "CodeJam", text:""}, //Programming Contest
+                {idx:'4', img: require('@/assets/1234.jpg'), header: "Easter Egg", text:""}, //Easter Egg
             ],
         }
     }

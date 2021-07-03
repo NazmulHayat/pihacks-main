@@ -1,6 +1,6 @@
 <template>
     <div class="
-        mm pl-16 pr-16
+        mm pl-16 ml-14 mr-12
     ">
         <div class="txt"> 
             <div class="fked text-lg-h1 font-weight-black"> PIHACKS'21 </div>
@@ -20,7 +20,7 @@
                 :erase-on-complete='false'
                 caret-animation='blink'
             ></vue-typer> <br>
-            <v-btn class="Btn mt-10 mb-20 font-weight-bold text-lg-h5" x-large>
+            <v-btn class="Btn mt-10 mb-10 font-weight-bold text-lg-h5" x-large>
                 <v-icon left x-large>
                     mdi-arrow-right
                 </v-icon>
@@ -50,21 +50,22 @@
 
     .fixed{
         color: #ffffff;
-        font-weight: 700;
+        /* font-weight: 700; */
     }
     .IMAGE{
         width: 100%;
         max-width: 800px;
         /* align-self: flex-start; */
         margin-top: -10vh;
-        padding-bottom: 2vh;
+        /* padding-bottom: 2vh; */
     }
     .fked{
         color: white;
-        font-weight: 800;
+        /* font-weight: 800;     */
     }
     .Btn{
         /* align-self: flex-start; */
+        /* color:white; */
     }
 </style>
 

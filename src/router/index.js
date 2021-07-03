@@ -5,7 +5,6 @@ import Home from '../views/Home.vue'
 import EventSegment from '../views/EventSegment.vue'
 import AboutUs from '../views/AboutUs.vue'
 import FAQs from'../views/FAQs.vue'
-import Schedule from'../views/Schedule.vue'
 
 
 Vue.use(VueRouter)
@@ -34,11 +33,6 @@ const router = new VueRouter({
       name: 'FAQs',
       component: FAQs
     },
-    {
-      path: '/schedule',
-      name: 'Schedule',
-      component: Schedule
-    }
   ]
 })
 

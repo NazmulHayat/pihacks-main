@@ -1,5 +1,7 @@
 <template>
-    <div id="flipdown" class="flipdown"></div>
+    <div class="ble pb-16 pt-5">
+        <div id="flipdown" class="flipdown"></div>
+    </div>
 </template>
 
 <script>
@@ -45,5 +47,9 @@ export default {
         font-size: 1.5em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin: auto;
+    }
+    .ble{
+        width: 100%;
+
     }
 </style>
