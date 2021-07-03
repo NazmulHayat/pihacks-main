@@ -1,11 +1,15 @@
 <template>
-    <div class="mm text-lg-h1">
-        <div> 
-            <div class="fixed"> Don't miss this </div> 
-            <div class="editable" max-width=400>
+    <div class="
+        mm pl-16 pr-16
+    ">
+        <div class="txt"> 
+            <div class="fked text-lg-h1 font-weight-black"> PIHACKS'21 </div>
+            <div class="up text-lg-h3 font-weight-bold white--text"> July 25th-31st completely virtual! </div> <br>
+            <div class="fixed text-lg-h2"> Don't miss this </div> 
+            <div class="editable text-lg-h2">
             <vue-typer
-                :text='["Golden Oppurtunity", "chance to win attractive prizes"]'
-                :repeat='Infinity'
+                :text='["Golden Oppurtunity", "chance to win attractive prizes!"]'
+                :repeat='2'
                 :shuffle='false'
                 initial-action='typing'
                 :pre-type-delay='70'
@@ -15,7 +19,13 @@
                 erase-style='backspace'
                 :erase-on-complete='false'
                 caret-animation='blink'
-            ></vue-typer>
+            ></vue-typer> <br>
+            <v-btn class="Btn mt-10 mb-20 font-weight-bold text-lg-h5" x-large>
+                <v-icon left x-large>
+                    mdi-arrow-right
+                </v-icon>
+                Apply Now!
+            </v-btn>
             </div>
         </div>
         <img class="IMAGE" src="../assets/cool_man.png">
@@ -25,23 +35,36 @@
 <style>
     .mm{
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
         height: auto;
     }
     .vue-typer .custom.char.typed {
         color: #ffffff;
-        font-weight: 700;
+        /* font-weight: 700; */
     }
     .vue-typer .custom.caret {
         width: 0.15em;
         background-color: #ffffff;
     }
+
     .fixed{
         color: #ffffff;
         font-weight: 700;
     }
     .IMAGE{
-
+        width: 100%;
+        max-width: 800px;
+        /* align-self: flex-start; */
+        margin-top: -10vh;
+        padding-bottom: 2vh;
+    }
+    .fked{
+        color: white;
+        font-weight: 800;
+    }
+    .Btn{
+        /* align-self: flex-start; */
     }
 </style>
 

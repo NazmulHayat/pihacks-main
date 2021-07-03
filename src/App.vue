@@ -4,16 +4,18 @@
     <v-content class="bg">
       <router-view/>
     </v-content>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
 
 import Navbar from '@/components/Navbar.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
-  components: { Navbar },
+  components: { Navbar, Footer },
   data: () => ({
     
   }),
@@ -23,7 +25,9 @@ export default {
 
 <style>
   .bg{
-    background: url('./assets/home-background.png') ; 
-    background-repeat:round;
+    /* background: url('./assets/lalal.jpg') ;  */
+    background-color: black;
+    background-repeat:repeat;
+    
   }
 </style>
