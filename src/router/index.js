@@ -19,7 +19,7 @@ const router = new VueRouter({
       component: Home 
     },
     {
-      path: '/event-segment',
+      path: '/event-segments',
       name: 'Event Segment',
       component: EventSegment
     }, 
