@@ -9,7 +9,7 @@
     <div class="background">
       <div id="particles-js" class="particles-js"></div>
     </div>
-    
+    <Footer/>
   </v-app>
 </template>
 
@@ -18,36 +18,18 @@
 import "particles.js";
 const config = require("./particles.json");
 import Navbar from '@/components/Navbar.vue';
-function WaitUntilparticlesjsExists()
-{
-    return new Promise((resolve, reject)=>{
-        setInterval(()=>{
-            if(document.getElementById("particles-js") != null)
-                resolve();
-        },10);
-        let a=0;
-        if(a) reject(); //vue is shit
-    });
-    
-}
-const resizeObserver = new ResizeObserver(async()=>
-{
-    initBG();
-});
-resizeObserver.observe(document.body);
-async function initBG()
-{
-    await WaitUntilparticlesjsExists();
-    window.particlesJS('particles-js', config);
-    
-}initBG();
+
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
-  components: { Navbar },
+  components: { Navbar, Footer },
   data: () => ({
     
-  })
+  }),
+  mounted(){
+    window.particlesJS('particles-js', config);
+  }
 }
 </script>
 
@@ -67,6 +49,6 @@ export default {
   }
 
   .background{
-      position: absolute;
+      position: fixed;
   }
 </style>
