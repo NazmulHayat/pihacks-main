@@ -17,7 +17,7 @@
 
 <script>
 
-var ParticleJsIsOn = false;
+var ParticleJsIsOn = true;
 
 import "particles.js";
 const config = require("./particles.json");
