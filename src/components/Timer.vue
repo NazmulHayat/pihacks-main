@@ -50,6 +50,5 @@ export default {
     }
     .ble{
         width: 100%;
-
     }
 </style>

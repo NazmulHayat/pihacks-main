@@ -1,6 +1,6 @@
 <template>
     <!-- <FAQs/> -->
-    <div v-if="!happy">asdlkfjasl;kdjf;lasdjf</div>
+    <div v-if="happy">asdlkfjasl;kdjf;lasdjf</div>
 </template>
 
 <script>
