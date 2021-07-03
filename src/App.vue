@@ -1,23 +1,24 @@
 <template>
-  <v-app id="wrapper">
-    <div class="content">
-      <Navbar/>
-      <v-main class="bg">
-        <router-view/>
-      </v-main>
-    </div>
-    <div class="background">
-      <div id="particles-js" class="particles-js"></div>
-    </div>
-    
-      <Footer class="footer"/>
-  </v-app>
+    <v-app>
+      <div id="wrapper">
+        <div class="content">
+          <Navbar/>
+          <v-main class="bg">
+            <router-view/>
+          </v-main>
+        </div>
+        <div class="background">
+          <div id="particles-js" class="particles-js"></div>
+        </div>
+      </div>
+        <Footer class="footer"/>
+    </v-app>
 </template>
 
 
 <script>
 
-var ParticleJsIsOn = true;
+var ParticleJsIsOn = false;
 
 import "particles.js";
 const config = require("./particles.json");
@@ -44,18 +45,15 @@ export default {
 <style>
   #wrapper{
     position: relative;
+    height: 100%;
   }
 
   .content{
-      min-height: 100vh;
       position: relative;
       z-index: 100;
+      padding-bottom:60px;
   }
-
   .background{
       position: fixed;
-  }
-  .footermain{
-    bottom:0;
   }
 </style>

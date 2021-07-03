@@ -16,7 +16,7 @@
           class="mx-4 white--text"
           icon
         >
-          <v-icon size="3.5vh">
+          <v-icon size="32px">
             {{ icon }}
           </v-icon>
         </v-btn>
@@ -52,5 +52,6 @@
 <style>
     .foot{
         margin : auto;
+        width:100%;
     }
 </style>

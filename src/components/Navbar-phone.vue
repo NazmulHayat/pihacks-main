@@ -11,9 +11,9 @@
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
     </v-app-bar>
     <v-navigation-drawer
-      v-model="drawer" absolute temporary>
+      v-model="drawer" fixed temporary>
       <v-list nav dense>
-        <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
+        <v-list-item-group v-model="group" active-class="light-blue--text text--accent-4">
           <v-list-item v-for="(link,i) in links" :key="i" :to="link.route">
             <v-list-item-icon>
               <v-icon>{{link.icon}}</v-icon>
