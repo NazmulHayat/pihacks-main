@@ -27,10 +27,7 @@ export default {
         {
             await WaitUntilFlipDownExists();
             var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
-            var fku = new flipdown(twoDaysFromNow, document.getElementById("flipdown"), {
-                theme: 'dark',
-                headings: ["Days", "Hours", "Minutes", "Seconds"]
-            });
+            var fku = new flipdown(twoDaysFromNow, document.getElementById("flipdown"));
             fku.start();
         }
     },

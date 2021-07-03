@@ -7,7 +7,7 @@
  * @param {object} opt - Optional configuration settings
  **/
  class FlipDown {
-  constructor(uts, el, opt = {}) {
+  constructor(uts, el) {
     // If uts is not specified
     if (typeof uts !== "number") {
       throw new Error(
@@ -35,7 +35,6 @@
 
     // FlipDown DOM element
     this.element = el;
-    console.log(el);
     // Rotor DOM elements
     this.rotors = [];
     this.rotorLeafFront = [];
@@ -60,7 +59,7 @@
     this.prevClockValuesAsString = [];
 
     // Parse options
-    this.opts = this._parseOptions(opt);
+    this.opts = this._parseOptions();
 
     // Set options
     this._setOptions();
@@ -144,16 +143,11 @@
    * @param {object} opt - Optional configuration settings
    * @author PButcher
    **/
-  _parseOptions(opt) {
+  _parseOptions() {
     let headings = ["Days", "Hours", "Minutes", "Seconds"];
-    
-    console.log("Aasdfaskjhdflkajshdflkjasldfjhlaksfhkljdshf");
-    console.log(opt);
-
     return {
-      // Theme
       theme: "dark",
-      headings,
+      headings: headings,
     };
   }
 
