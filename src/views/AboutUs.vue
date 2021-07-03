@@ -1,11 +1,11 @@
 <template>
-    <h1> About Us </h1>
+    <Schedule/>
 </template>
 
 <script>
-
+import Schedule from '../components/Schedule.vue';
 export default {
-
+    components: {Schedule}
 }
 
 </script>
