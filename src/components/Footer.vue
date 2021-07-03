@@ -7,7 +7,7 @@
     <v-card
       flat
       tile
-      class="foot    white--text text-center"
+      class="foot white--text text-center"
     >
       <v-card-text>
         <v-btn

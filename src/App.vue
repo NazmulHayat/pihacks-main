@@ -9,12 +9,16 @@
     <div class="background">
       <div id="particles-js" class="particles-js"></div>
     </div>
-    <Footer/>
+    
+      <Footer class="footer"/>
   </v-app>
 </template>
 
 
 <script>
+
+var ParticleJsIsOn = false;
+
 import "particles.js";
 const config = require("./particles.json");
 import Navbar from '@/components/Navbar.vue';
@@ -30,27 +34,28 @@ export default {
   mounted(){
     document.getElementById("particles-js").style.height=window.screen.height + "px";
     document.getElementById("particles-js").style.width=window.screen.width + "px";
-    window.particlesJS('particles-js', config);
+    if(ParticleJsIsOn)
+      window.particlesJS('particles-js', config);
   }
 }
 </script>
 
 
 <style>
-  .bg{
-    /* background: url('./assets/home-background.png') ;  */
-    background-repeat:round;
-  }
   #wrapper{
     position: relative;
   }
 
   .content{
+      min-height: 100vh;
       position: relative;
       z-index: 100;
   }
 
   .background{
       position: fixed;
+  }
+  .footermain{
+    bottom:0;
   }
 </style>

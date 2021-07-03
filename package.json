@@ -11,6 +11,7 @@
     "core-js": "^3.6.5",
     "particles.js": "^2.0.0",
     "vue": "^2.6.11",
+    "vue-navigation-bar": "^4.1.0",
     "vue-router": "^3.2.0",
     "vue-typer": "^1.2.0",
     "vue2-flip-countdown": "^0.11.1",

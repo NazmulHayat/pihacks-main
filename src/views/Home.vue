@@ -18,7 +18,6 @@
 import Carousel from '@/components/Carousel.vue';
 import Timer from '@/components/Timer.vue';
 import TypeWriter from '@/components/TypeWriter.vue';
-console.log(Timer);
 export default {
   components: {Carousel, Timer, TypeWriter},
   data: () => ({
