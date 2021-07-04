@@ -18,7 +18,7 @@
 
 <script>
 
-var ParticleJsIsOn = 0;
+var ParticleJsIsOn = 1;
 
 import "particles.js";
 const config = require("./particles.json");
@@ -54,6 +54,7 @@ export default {
       padding-bottom:60px;
   }
   .background{
+      top:0;
       z-index: 0;
       position: fixed;
   }
