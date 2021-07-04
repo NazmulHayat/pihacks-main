@@ -1,15 +1,69 @@
 <template>
-<div>
-    <div v-for="content in contents" :key="content.tag" class="asd ml-12 mr-12 pr-16 pl-16 pt-10 pb-10">
-        <v-card
-            elevation="0"
-            height="auto"
-            color="transparent"
-        >   
-            <div class="header font-weight-black text-h3"> {{content.tag}} </div>
-            <div class="main font-weight-medium text-h5 pt-5"> {{content.text}} </div>
-        </v-card>
-    </div>
+<div class="main
+    mx-8
+    mx-sm-10
+    mx-lg-auto
+    pt-3 pb-3
+">
+    <v-card
+    elevation="24"
+    height="auto"
+    color="transparent"
+    class="idea-sprint pa-8 mt-8 mb-10"
+    >   
+        <div class="header font-weight-black text-h3"> {{contents[0].tag}} </div>
+        <div class="main font-weight-medium text-h5 pt-5"> {{contents[0].text}} </div>
+    </v-card>
+
+    <v-card
+    elevation="24"
+    height="auto"
+    color="transparent"
+    class="math pa-8 mb-10"
+    >   
+        <div class="header font-weight-black text-h3"> {{contents[1].tag}} </div>
+        <div class="main font-weight-medium text-h5 pt-5"> {{contents[1].text}} </div>
+    </v-card>
+    
+    <v-card
+    elevation="24"
+    height="auto"
+    color="transparent"
+    class="codejam pa-8"
+    >   
+        <div class="header font-weight-black text-h3"> {{contents[2].tag}} </div>
+        <div class="main font-weight-medium text-h5 pt-5"> {{contents[2].text}} </div>
+    </v-card>
+    
+    <v-card
+    elevation="24"
+    height="auto"
+    color="transparent"
+    class="tech-talk pa-8 mb-10"
+    >   
+        <div class="header font-weight-black text-h3"> {{contents[3].tag}} </div>
+        <div class="main font-weight-medium text-h5 pt-5"> {{contents[3].text}} </div>
+    </v-card>
+    
+    <v-card
+    elevation="24"
+    height="auto"
+    color="transparent"
+    class="break-the-code pa-8 mb-10"
+    >   
+        <div class="header font-weight-black text-h3"> {{contents[4].tag}} </div>
+        <div class="main font-weight-medium text-h5 pt-5"> {{contents[4].text}} </div>
+    </v-card>
+    
+    <v-card
+    elevation="24"
+    height="auto"
+    color="transparent"
+    class="easter-egg pa-8 mb-10"
+    >   
+        <div class="header font-weight-black text-h3"> {{contents[5].tag}} </div>
+        <div class="main font-weight-medium text-h5 pt-5"> {{contents[5].text}} </div>
+    </v-card>
 </div>
 </template>
 <script>
@@ -71,4 +125,14 @@ We will arrange for participants a special Tech Talk on Cryptography, in which y
         overflow-wrap: break-word;
         white-space: pre-wrap;
     }
+    .main{
+      max-width: 1700px;
+    }
+    /* kaj korenah eta */
+    /* .big{
+
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+    } */ 
 </style>

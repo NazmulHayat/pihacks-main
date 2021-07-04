@@ -6,7 +6,7 @@
             max-width='50'
             contain
         ></v-img>
-        <span id='main_text' class="white--text font-weight-bold d-none d-sm-flex">PIHACKS</span>
+        <span id='main_text' class="white--text font-weight-bold">PIHACKS</span>
         <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
     </v-app-bar>

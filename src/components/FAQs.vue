@@ -70,21 +70,33 @@ export default {
         <v-expansion-panels dark class="pb-16 pt-16 mx-auto" style="max-width:1050px">
         <v-expansion-panel v-for="(qa,i) in FAQs" :key="i">
             <v-expansion-panel-header>
-            <div class="text-subtitle-1">{{qa.q}}</div>
+            <div class=
+                "text-md-h5
+                text-xs-h4
+                "
+            >{{qa.q}}</div>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-            <div class="text-subtitle-2">Ans: {{qa.a}}</div>
+            <div v-if="qa.imgs==null" class="text-h5">Ans: {{qa.a}}</div>
             <v-container v-if="qa.imgs!=null">
-                <v-row>
-                    <v-col v-for="(img,i) in qa.imgs" :key="i">
+                <v-container class="text ml-n10">
+                    <div class="px-4" style="display:inline-block" v-for="(img,i) in qa.imgs" :key="i">
                         <a v-bind:href="qa.links[i]">
-                            <v-img :src="img" contain ></v-img>
+                            <v-img :src="img" contain max-width="80"></v-img>
                         </a>
-                    </v-col>
-                </v-row>
+                    </div>
+                </v-container>
             </v-container>
             </v-expansion-panel-content>
         </v-expansion-panel>
         </v-expansion-panels>
 </template>
+
+<style>
+    .text{
+        display: inline-block;
+        /* display : flex;
+        justify-content: center; */
+    }
+</style>
 
