@@ -36,12 +36,13 @@ export default {
   > 
     <v-carousel :show-arrows="false" 
       cycle
-      interval="100000"
+      interval="5000"
     >
       <v-carousel-item
         v-for="(item,i) in slides"
         :key="i"
         :src="item.img"
+        transition="slide-x-transition"
       >
       <div class="BOX">
         <div id="header2" transition="fade-transition" 
