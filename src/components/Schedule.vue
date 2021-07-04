@@ -5,7 +5,7 @@
             <!-- <div class="tt text-h3 white--text font-weight-bold"> Schedule </div> -->
             <v-img 
                 class="mt-8"
-                max-width="900"
+                max-width="2000"
                 src = "../assets/Timeline.png"></v-img>
         </div>
         <!-- <div class="chnges font-weight-medium"> 7 day long event with intense challenges and educational webinars</div> -->
