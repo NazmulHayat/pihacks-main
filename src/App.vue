@@ -1,7 +1,7 @@
 <template>
     <v-app>
       <div id="wrapper">
-        <div class="content">
+        <div class="home-content">
           <Navbar/>
           <v-main class="bg">
             <router-view/>
@@ -48,12 +48,13 @@ export default {
     height: 100%;
   }
 
-  .content{
+  .home-content{
       position: relative;
       z-index: 100;
       padding-bottom:60px;
   }
   .background{
+      z-index: 0;
       position: fixed;
   }
 </style>

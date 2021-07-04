@@ -6,10 +6,10 @@ export default {
     data (){
         return {
             slides: [
-                {idx:'1', img: require('@/assets/math.jpg'), header: "Idea Sprint",
+                {idx:'1', img: require('@/assets/ic.jpg'), header: "Idea Sprint",
                   text: ""
                 }, //idea contest
-                {idx:'2', img: require('@/assets/ic.jpg'), header: "Mathletics", text:""}, //Mathletics 
+                {idx:'2', img: require('@/assets/math.jpg'), header: "Mathletics", text:""}, //Mathletics 
                 {idx:'3', img: require('@/assets/pg.jpg'), header: "CodeJam", text:""}, //Programming Contest
                 {idx:'4', img: require('@/assets/1234.jpg'), header: "Easter Egg", text:""}, //Easter Egg
             ],
@@ -24,7 +24,7 @@ export default {
     elevation="24"
     class="mx-auto"
   > 
-    <v-carousel :show-arrows="false">
+    <v-carousel :show-arrows="true" >
       <v-carousel-item
         v-for="(item,i) in slides"
         :key="i"
