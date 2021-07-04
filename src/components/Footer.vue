@@ -53,5 +53,5 @@
     .foot{
         margin : auto;
         width:100%;
-    }
+    }           
 </style>

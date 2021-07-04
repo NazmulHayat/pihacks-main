@@ -9,13 +9,13 @@ export default {
             //   goto(nm)
             // ],
             slides: [
-                {idx:'1', img: require('@/assets/ic.jpg'), header: "Idea Sprint",
+                {idx:'1', img: require('@/assets/networking.png'), header: "Idea Sprint",
                   text:"Effeciently develop your concept prototype and polished product"
                 }, //idea contest
-                {idx:'2', img: require('@/assets/math.jpg'), header: "Mathletics", 
+                {idx:'2', img: require('@/assets/frog.png'), header: "Mathletics", 
                   text:"Your conventional math contest, but with an added spice of thrill"
                 }, //Mathletics 
-                {idx:'3', img: require('@/assets/pg.jpg'), header: "CodeJam", 
+                {idx:'3', img: require('@/assets/home-background.png'), header: "CodeJam", 
                   text:"4 anticipating hours to showcase your problem-solving skills"}, //Programming Contest
                 {idx:'4', img: require('@/assets/1234.jpg'), header: "Easter Egg", 
                   text:"Put your observational mind to test!"}, //Easter Egg
