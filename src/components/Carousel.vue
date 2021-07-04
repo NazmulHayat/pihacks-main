@@ -36,7 +36,7 @@ export default {
   > 
     <v-carousel :show-arrows="false" 
       cycle
-      interval="3000"
+      interval="100000"
     >
       <v-carousel-item
         v-for="(item,i) in slides"
@@ -44,8 +44,20 @@ export default {
         :src="item.img"
       >
       <div class="BOX">
-        <div id="header" transition="fade-transition" class="white--text font-weight-medium text-h1 px-8 pt-8">{{item.header}}</div>
-        <div id="content" class="white--text text-h4 px-8 pt-4">{{item.text}}</div>
+        <div id="header2" transition="fade-transition" 
+        class="header2 white--text font-weight-medium 
+        text-md-h2
+        text-lg-h1 
+        pt-8 pb-5
+        pl-8 
+        ">
+          {{item.header}}</div>
+        <div id="content" 
+        class="white--text 
+        text-md-h4
+        text-lg-h3 
+        pl-8">
+          {{item.text}}</div>
         <v-btn onclick = "window.location.href='/event-segments';" class="Btn mt-10 mb-10 mx-8 font-weight-bold text-lg-h5" light x-large>
           <!-- <v-icon left x-large>
               mdi-arrow-right
@@ -75,17 +87,12 @@ export default {
   }
   .BOX{
     font-family: 'Chakra Petch', sans-serif;
-    display: flex;
+    /* display: flex; */
     max-width: 40vw;
     height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-  #header{
-    /* text-decoration: underline; */
-    /* margin: auto; */
-    /* padding-left: 41.5vw; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* justify-content: space-around; */
   }
   #content{
     /* padding-right: 20px;
@@ -97,6 +104,83 @@ export default {
   #trans{
     background-color: transparent;
     /* color: transparent; */
+  }
+
+  @media only screen and (max-width: 960px) {
+    /* has no fk effect */
+    .BOX{
+      font-family: 'Roboto', sans-serif;
+      /* display: flex; */
+      max-width: 40vw;
+      height: 100%;
+    }
+    .header2{
+      font-size: 65px;
+      padding-bottom: 10px;
+    }
+    #content{
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 880px) {
+    /* has no fk effect */
+    .BOX{
+      font-family: 'Roboto', sans-serif;
+      /* display: flex; */
+      max-width: 45vw;
+      height: 100%;
+    }
+    .header2{
+      font-size: 50px;
+      padding-bottom: 10px;
+    }
+    #content{
+      font-size: 33px;
+    }
+  }
+  @media only screen and (max-width: 684px) {
+    /* has no fk effect */
+    .header2{
+      font-size: 45px;
+    }
+    #content{
+      font-size: 29px;
+    }
+  }
+  /* @media only screen and (max-width: 630px){
+    .Btn{
+      padding: 200px;
+      width: 25vw;
+      font-size: 0px;
+    }
+  } */
+  @media only screen and (max-width: 600px) {
+    /* has no fk effect */ 
+    .header2{
+      font-size: 40px;
+    }
+    #content{
+      font-size: 27px;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+    /* has no fk effect */ 
+    .header2{
+      font-size: 35px;
+    }
+    #content{
+      font-size: 25px;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    /* has no fk effect */ 
+    .header2{
+      font-size: 30px;
+    }
+    #content{
+      font-size: 23px;
+    }
   }
 </style>
 
