@@ -14,11 +14,10 @@
                 <div class="fixed">Don't miss this</div> 
                 <div class="editable">
                     <typewriter
-                    :replace="replace"
                     :type-interval="100"
                     :replace-interval="1000"
-                    class="typewriter">Golden Oppurtunity</typewriter>
-                    <v-btn class="Btn mt-10 mb-10 font-weight-bold text-lg-h5" x-large light>
+                    class="typewriter" ref="typewriter"><p>G</p></typewriter>
+                    <v-btn class="Btn mt-10 mb-10 font-weight-bold text-lg-h5" @click="replace1" x-large light>
                         <v-icon left x-large>
                             mdi-arrow-right
                         </v-icon>
@@ -33,20 +32,53 @@
 
 <script>
 import Typewriter from "typewriter-vue";
-
+function isInViewport(element) {
+    if(element==null) return;
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+isInViewport(null);
 export default {
     name: "App",
     components: {
     Typewriter,
     },
-    data: () => ({
-    replace: [
-      {
-        from: "Golden Oppurtunity",
-        to: "Chance to win attractive prizes!",
-      },
-    ],
-  }),
+    data: () => ({}),
+    methods: {
+        replace1(){
+            this.$refs.typewriter.replaceText({
+                from: "G",
+                to: "Golden Oppurtunity",
+            });
+        },
+        replace2(){
+            this.$refs.typewriter.replaceText({
+                from: "Golden Oppurtunity",
+                to: "Chance to win attractive prizes!",
+            });
+        },
+    },
+    mounted()
+    {
+        
+        window.setTimeout(()=>{
+            var id= window.setInterval(() => {
+                if(isInViewport(document.getElementsByClassName("typewriter")[0]))
+                {
+                    window.clearInterval(id);
+                    this.replace1();
+                    window.setTimeout(()=>{
+                        this.replace2();
+                    },3000);
+                }
+            },100);
+        },1000);
+    }
 
 };
 </script>
