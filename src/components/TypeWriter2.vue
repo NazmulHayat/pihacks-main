@@ -69,12 +69,16 @@ export default {
         window.setTimeout(()=>{
             var id= window.setInterval(() => {
                 if(isInViewport(document.getElementsByClassName("typewriter")[0]))
-                {
+                {   
                     window.clearInterval(id);
-                    this.replace1();
-                    window.setTimeout(()=>{
-                        this.replace2();
-                    },3000);
+                    document.getElementsByClassName('txt')[0].style.animation = "transitionIn2 1.5s forwards";
+                    document.getElementsByClassName('IMAGE')[0].style.animation = "transitionIn3 1.5s forwards";
+                    window.setTimeout(() => {
+                        this.replace1();
+                        window.setTimeout(()=>{
+                            this.replace2();
+                        },3000)
+                    }, 2000);
                 }
             },100);
         },1000);
@@ -84,6 +88,31 @@ export default {
 </script>
 
 <style>
+    .txt, .IMAGE{
+        /* display: none; */
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    @keyframes transitionIn2 {
+        from {
+        opacity: 0;
+        transform: translateX(-300px);
+        }
+        to{
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    @keyframes transitionIn3 {
+        from {
+            opacity: 0;
+            transform: translateX(300px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     .mm{
         display: flex;
         /* flex-wrap: wrap; */
