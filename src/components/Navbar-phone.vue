@@ -8,7 +8,7 @@
         ></v-img>
         <span id='main_text' class="white--text font-weight-bold d-none d-sm-flex">PIHACKS</span>
         <v-spacer></v-spacer>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer" fixed temporary>
@@ -18,7 +18,7 @@
             <v-list-item-icon>
               <v-icon>{{link.icon}}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>{{link.text}}</v-list-item-title>
+            <v-list-item-title class="text-subtitle-1">{{link.text}}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
